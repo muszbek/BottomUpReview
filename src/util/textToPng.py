@@ -9,7 +9,7 @@ LINE_SPACING = 3
 
 def textToPng(text, fullpath, fontColor="#000000", bgColor="#FFFFFF", fontsize=12):
 
-    font = ImageFont.truetype("consola.ttf", fontsize)
+    font = ImageFont.truetype("../res/consola.ttf", fontsize)
 
     lines = ('\n' + text).split('\n')
     bgMap = []
