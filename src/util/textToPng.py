@@ -2,6 +2,9 @@ from PIL import ImageFont
 from PIL import Image
 from PIL import ImageDraw
 from game import tiles
+from os import path
+
+FONT_PATH = "../res/CONSOLA.TTF"
 
 LEFT_PADDING = 3
 RIGHT_PADDING = 3
@@ -9,7 +12,10 @@ LINE_SPACING = 3
 
 def textToPng(text, fullpath, fontColor="#000000", bgColor="#FFFFFF", fontsize=12):
 
-    font = ImageFont.truetype("../res/consola.ttf", fontsize)
+    if not path.exists(FONT_PATH):
+        print("ERROR: cannot find truetype font path!")
+    
+    font = ImageFont.truetype(FONT_PATH, fontsize)
 
     lines = ('\n' + text).split('\n')
     bgMap = []
