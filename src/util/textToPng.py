@@ -80,3 +80,19 @@ if __name__ == "__main__":
     result = textToPng(text, '../test/test.png')
     _printMap(result[0])
     
+    
+
+            #
+           # #
+          #   #
+         #     #
+        ##     ##
+          #   #
+          #   #
+          #   #
+          #   #
+          #   #
+          #####
+          
+    ### GET TO THE TOP ###
+        
